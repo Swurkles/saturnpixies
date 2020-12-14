@@ -1,0 +1,53 @@
+{"frames": {
+
+"MrSaturn-0.png":
+{
+	"frame": {"x":1,"y":1,"w":16,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+	"sourceSize": {"w":16,"h":24},
+	"anchor": {"x":0,"y":0}
+},
+"MrSaturn-1.png":
+{
+	"frame": {"x":19,"y":1,"w":16,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+	"sourceSize": {"w":16,"h":24},
+	"anchor": {"x":0,"y":0}
+},
+"MrSaturn-2.png":
+{
+	"frame": {"x":37,"y":1,"w":16,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+	"sourceSize": {"w":16,"h":24},
+	"anchor": {"x":0.25,"y":0.375}
+},
+"MrSaturn-3.png":
+{
+	"frame": {"x":55,"y":1,"w":16,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+	"sourceSize": {"w":16,"h":24},
+	"anchor": {"x":0,"y":0}
+}},
+"animations": {
+	"MrSaturn_side": ["MrSaturn-2.png","MrSaturn-3.png"], 
+	"MrSaturn_neutral": ["MrSaturn-0.png","MrSaturn-0.png"],
+	"MrSaturn_back": ["MrSaturn-1.png","MrSaturn-1.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "saturn-tileset.png",
+	"format": "RGBA8888",
+	"size": {"w":72,"h":26},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f68e156b32bff4dbc6b2955555ac86cb:bdc6c2277fdb732b4b67a88e1df421ba:f9d3475aa107ef508472d600b80248d7$"
+}
+}
