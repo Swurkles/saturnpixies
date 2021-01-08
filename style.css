@@ -1,0 +1,7 @@
+#gamewindow{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    margin-left: -15%;
+}

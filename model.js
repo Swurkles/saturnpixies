@@ -1,17 +1,43 @@
+// ************ MODEL *****************
+
+  //Variables for loader and setup()
+  let sheet1, sheet2, sprite, tilingSprite;
+
+// Texture Arrays for Saturn's different sprites animations
+let saturn_neutral, saturn_side, saturn_back;
+// Phase Distorter texture
+let phase_distorter;
+
+  //Game variables
+    let state = play;
+    let walkSpeed = 2;
+  //Game functions
+  function gameLoop(delta){
+    state(delta);
+  }
+
+  function play(delta){
+    sprite.play();
+    setCollisions();
+    startInput();
+    control(sprite, walkSpeed);
+  }
+
+  function move(sprite){
+    sprite.x += sprite.vx;
+    sprite.y += sprite.vy;
+    sprite.vx = 0;
+    sprite.vy = 0;
+  }
+
+  function setCollisions(){
+    contain(sprite, tilingSprite);
+  }
+
 //Helper functions
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-//Variables for loader and setup()
-let sheet; let sheet2; let sprite; let tilingSprite; let animatedSprite;
-
-let walkSpeed = 6;
-// Texture Arrays for Saturn's different sprites animations
-let saturn_neutral;
-let saturn_side;
-let saturn_back;
-let phase_distorter;
-
 
 function hitTestRectangle(r1, r2) {
 
@@ -96,9 +122,7 @@ function hitTestRectangle(r1, r2) {
     return collision;
   }
 
-function gameLoop(delta){
-    sprite.play();
-    contain(sprite, {x:40, y:40, width:app.screen.width, height:app.screen.height});
-    idleAnimation(sprite);
-    control(sprite);
-}
+  function resetVelocity(sprite){
+    sprite.vx = 0;
+    sprite.vy = 0;
+  }
